@@ -200,7 +200,7 @@ body {
   display: flex;
 }
 
-.learn-more-btn {
+.girl-section-blue-btn {
   margin-top: 47px;
 }
 
@@ -263,7 +263,7 @@ body {
   height: 40px;
 }
 
-.first-line-4 {
+.image-gallery-item-title {
   font-weight: 600;
   font-size: 1.25rem;
   margin-top: 10px;
@@ -275,25 +275,8 @@ body {
   color: #002966;
 }
 
-.image-container-main {
-  width: 49.99%;
-}
-
 .image-gallery-item {
   margin-bottom: 30px;
-}
-
-.gallery-img {
-  margin-bottom: 20px;
-}
-
-.img-gallery {
-  flex-direction: column;
-  padding-right: 12px;
-}
-
-.image-container-4 {
-  display: flex;
 }
 
 /* section-5 */
@@ -359,12 +342,12 @@ body {
   margin-bottom: 70px;
 }
 
-.sec-6-first-line {
+.question-section-title {
   padding: 0;
   margin: 0;
 }
 
-.section-6-title-question-main {
+.question-section-block-main {
   margin-top: 30px;
 }
 
@@ -398,11 +381,11 @@ body {
   margin-bottom: 23px;
 }
 
-.left {
+.left-side-block {
   float: left;
 }
 
-.right {
+.right-side-comman {
   float: right;
 }
 
@@ -665,19 +648,16 @@ input[type="text"] {
 .font-color-blue {
   color: #1a75ff;
 }
-
 /*  responsive */
 @media screen and (max-width: 600px) {
   /* navbar  */
+  .white-btn-comman {
+    width: 100%;
+    display: block;
+  }
   .second-div-footer-support {
     text-align: start;
     padding-left: 17px;
-  }
-
-  .image-container-4 {
-    display: flex;
-    padding-left: 26px;
-    justify-content: center;
   }
 
   .navbar-item-right-none {
@@ -758,11 +738,16 @@ input[type="text"] {
     padding: 24px;
   }
 
-  .learn-more-btn {
+  .girl-section-blue-btn {
     width: 100%;
     margin-top: 2px;
     text-align: center;
     padding: 10px 20px;
+    width: 100%;
+    margin-top: 2px;
+    text-align: center;
+    padding: 10px 20px;
+    margin-bottom: 10px;
   }
 
   .watch-demo-btn {
@@ -776,24 +761,10 @@ input[type="text"] {
   }
 
   /* section 4 */
-  .image-container-main {
-    width: 100%;
-    flex-direction: column;
-  }
 
   .image-gallery-left-section {
     width: 100%;
     flex-direction: column;
-  }
-
-  .big-image {
-    height: auto;
-    width: 147px;
-  }
-
-  .small-image {
-    height: auto;
-    width: 147px;
   }
 
   /* section 5- saas topic */
@@ -974,24 +945,9 @@ input[type="text"] {
     flex-direction: column;
   }
 
-  .image-container-main {
-    width: 100%;
-    flex-direction: column;
-  }
-
   .image-gallery-left-section {
     width: 100%;
     flex-direction: column;
-  }
-
-  .big-image {
-    height: 332px;
-    width: 280px;
-  }
-
-  .small-image {
-    height: 198px;
-    width: 280px;
   }
 
   .row {
@@ -1110,10 +1066,6 @@ input[type="text"] {
   }
 
   /* img container */
-  .image-container-4 {
-    display: flex;
-    padding: 27px;
-  }
 }
 
 @media screen and (max-width: 450px) {
@@ -1133,16 +1085,6 @@ input[type="text"] {
 }
 
 @media screen and (max-width: 300px) {
-  .small-image {
-    height: 69px;
-    width: 100px;
-  }
-
-  .big-image {
-    height: 120px;
-    width: 100px;
-  }
-
   .navbar {
     display: block;
   }
@@ -1173,20 +1115,6 @@ input[type="text"] {
   }
 }
 
-@media screen and (max-width: 550px) and (min-width: 380px) {
-  .big-image {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-  }
-
-  .small-image {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-  }
-}
-
 @media screen and (min-width: 392px) {
   .navbar-small {
     display: flex;
@@ -1194,20 +1122,27 @@ input[type="text"] {
     right: 0;
     position: absolute;
     padding-right: 22px;
-    align-items: flex-start;
+    align-items: center;
   }
 }
-
-@media screen and (max-width: 890px) and (min-width: 600px) {
-  .image-container-4 {
-    display: flex;
-    padding: 71px;
-  }
+/*  */
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
 }
 
-@media screen and (max-width: 770px) and (min-width: 890px) {
-  .image-container-4 {
-    display: flex;
-    padding: 118px;
-  }
+/* Create four equal columns that sits next to each other */
+.img-column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.img-column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+.image-gallery-main {
+  width: 49%;
 }
