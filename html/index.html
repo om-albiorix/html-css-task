@@ -9,46 +9,30 @@
   <link rel="stylesheet" href="/css/index.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
-
 <body>
   <!-- navbar -->
-  <section class="navbar-section">
-    <nav>
-      <ul>
-        <div class="navbar">
-        <div class="navbar-small-left">
-          <li class="navbar-item">
-            <img src="/assets/Images/small-logo.png" class="img-logo" alt="" />
+  <section class="navbar-main">
+    <div class="navbar-main-row">
+      <div class="navbar-logo-side">
+        <img src="/assets/Images/Logo (Replace with your own).png" alt="" />
+      </div>
+      <div class="">
+        <ul class="navbar-item-main">
+          <li class="nabvar-item navbar-item-hidden">Home</li>
+          <li class="nabvar-item navbar-item-hidden">Features</li>
+          <li class="nabvar-item navbar-item-hidden">About us</li>
+          <li class="nabvar-item navbar-item-hidden">News</li>
+          <li class="nabvar-item navbar-item-hidden">Contact</li>
+          <li class="nabvar-item navbar-btn navbar-item-visible blue-button-hover">
+            Start Now
           </li>
-          <li class="navbar-item">Whitespace UI</li>
-        </div>
-        <div class="navbar-small">
-          <li class="navbar-item navbar-item-right hamburger-menu">
+          <li class="nabvar-item navbar-item-visible hamburger-menu">
             <i class="fa-solid fa-bars"></i>
           </li>
-
-          <li class="navbar-item navbar-item-right navbar-item-right-none">
-            Contact
-          </li>
-          <li class="navbar-item navbar-item-right navbar-item-right-none">
-            News
-          </li>
-          <li class="navbar-item navbar-item-right navbar-item-right-none">
-            About us
-          </li>
-          <li class="navbar-item navbar-item-right navbar-item-right-none">
-            Features
-          </li>
-          <li class="navbar-item navbar-item-right navbar-item-right-none">
-            Home
-          </li>
-          <li class="navbar-item navbar-item-right nav-button blue-button-hover blue-button-comman">Start Now</li>
-        </div>
+        </ul>
       </div>
-      </ul>
-    </nav>
+    </div>
   </section>
-
   <!-- section 2 -->
   <section>
     <div class="row">
@@ -61,11 +45,17 @@
             Check out our proven methods, guides, and exercises that help make
             work better, and people happier.
           </p>
-          <div class="girl-section-btn">
+          <!-- <div class="girl-section-btn">
             <div class="girl-section-blue-btn blue-button-hover blue-button-comman">Learn more</div>
             <div class="white-btn-comman">
               <img src="/assets/Images/play.png" alt="" /> Watch demo
             </div>
+          </div> -->
+          <div class="girl-section-btn-main">
+            <button class="blue-btn blue-button-hover">Learn more</button>
+            <button class="white-btn">
+              <img src="/assets/Images/play.png" alt="" /> Watch Demo
+            </button>
           </div>
           <p class="font-color-gray">Trusted by over than 1M customers</p>
           <div>
@@ -142,12 +132,12 @@
       <div class="image-gallery-main">
         <div class="image-container">
           <div class="img-column">
-            <img src="/assets/Images/Rectangle 145.png" style="width: 100%" />
+            <img src="/assets/Images/Rectangle 145.png" class="img-gallery-top" style="width: 100%" />
             <img src="/assets/Images/Rectangle 148.png" style="width: 100%" />
           </div>
-    
+
           <div class="img-column">
-            <img src="/assets/Images/Rectangle 147.png" style="width: 100%" />
+            <img src="/assets/Images/Rectangle 147.png" class="img-gallery-top" style="width: 100%" />
             <img src="/assets/Images/Rectangle 146.png" style="width: 100%" />
           </div>
         </div>
@@ -181,13 +171,11 @@
           </div> 14-days free trial
         </span>
       </div>
-      <div class="section-5-saas-btn-main">
-        <div class="get-started-btn blue-button-hover blue-button-comman">
-          Get Started
-        </div>
-        <div class="white-btn-comman">
-          <img src="/assets/Images/play.png" alt="" /> Watch demo
-        </div>
+      <div class="sass-section-btn-main">
+        <button class="blue-btn">Learn more</button>
+        <button class="white-btn">
+          <img src="/assets/Images/play.png" alt="" /> Watch Demo
+        </button>
       </div>
     </div>
     </div>
@@ -407,7 +395,7 @@
     </div>
 
   </footer>
-  
+
   <div class="horizontal-rule"></div>
   <div class="authorship-details">
     <div>© 2023 Whitespace UI - All rights reserved
@@ -417,4 +405,5 @@
     </div>
   </div>
 </body>
+
 </html>
